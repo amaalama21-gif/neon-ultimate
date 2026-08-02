@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeonGPT ULTIMATE ⚡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>NeonGPT</h2>
+        <p>Voice + Code + Memory</p>
+        <button onclick="cl<earMemory()" style="margin-top:20px; width:100%; padding:12px; background:rgba(255,255,255,0.2); border:1px solid white; color:white; border-radius:10px; cursor:pointer;">Clear Memory</button>
+    </div>
+
+    <div class="chat-container">
+        <div class="header">
+            <h1>NeonGPT ⚡</h1>
+            <p>Click mic to talk | Ask for code | I remember you</p>
+        </div>
+
+        <div class="messages" id="messages">
+            <div class="message bot">Yo bro! I'm NeonGPT. Click 🎤 to talk, or type. I got memory + code mode 🔥</div>
+        </div>
+
+        <div class="input-area">
+            <button onclick="toggleVoice()" id="micBtn" title="Click to Talk">🎤</button>
+            <input type="text" id="userInput" placeholder="Type or click mic..." onkeypress="if(event.key==='Enter') sendMessage()">
+            <button onclick="sendMessage()">➤</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
